@@ -1,0 +1,362 @@
+{% extends 'ShopInn/basic.html' %}
+{% block css %}
+
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+          img.image{
+            width: 90px;
+            height: 90px;
+           }
+          h2{
+           margin-top: 50px;
+           }
+          #arrowleft {
+         padding: 10px 8px;
+         position: absolute;
+         margin-left: -90px;
+         top: 45%;
+         z-index: 5;
+         display: inline-block;
+          }
+           #arrowright {
+           padding: 10px 8px;
+           position: absolute;
+           margin-right: -90px;
+           top: 45%;
+           z-index: 5;
+           display: inline-block;
+          }
+          #big_slider.carousel-inner div {
+           height: 450px;
+           object-fit: cover;
+          }
+          #abc
+         {margin:30px;
+          }
+          .col-md-3
+          {
+          display: inline-block;
+          margin-left:-4px;
+          }
+          .carousel-indicators .active {
+          background-color: blue;
+            }
+          .col-md-3 img{
+           max-width: 190px;
+           height: 140px;
+          }
+          body .carousel-indicator li{
+          background-color: blue;
+          }
+          body .carousel-indicators{
+          bottom: 0;
+          }
+          body .carousel-control-prev-icon,
+          body .carousel-control-next-icon{
+            background-color: #6c757d;
+
+          }
+           .carousel-control-prev,
+           .carousel-control-next{
+           top: auto;
+           bottom: auto;
+           padding-top: 150px;
+
+          }
+           body .no-padding{
+           padding-left: 0,
+           padding-right: 0;
+           }
+  {%endblock%}
+
+  {%block body%}
+  {% load static %}
+
+ <div class="container px-4">
+  <div class="row gx-5" >
+    <div class="col" >
+      <div>
+        <img src="https://rukminim1.flixcart.com/flap/128/128/image/f15c02bfeb02d15d.png?q=100" alt="top offers" class="image" ></div>
+    <div class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Top Offers
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div><img src="https://rukminim1.flixcart.com/flap/128/128/image/ab7e2b022a4587dd.jpg?q=100" alt="home decor" class="image"></div>
+    <div class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Home Decor
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div><img src="https://rukminim1.flixcart.com/flap/128/128/image/29327f40e9c4d26b.png?q=100" alt="grocery" class="image"></div>
+       <div class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#"  role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Grocery
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div><img src="https://rukminim1.flixcart.com/flap/128/128/image/69c6589653afdb9a.png?q=100" alt="electronics" class="image"></div>
+       <div class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#"  role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Electronics
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div><img src="https://rukminim1.flixcart.com/flap/128/128/image/82b3ca5fb2301045.png?q=100" alt="fashion" class="image"></div>
+       <div class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#"  role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Fashion
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div><img src="https://rukminim1.flixcart.com/flap/128/128/image/22fddf3c7da4c4f4.png?q=100"
+                alt="mobile" class="image"></div>
+       <div class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#"  role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Mobiles
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+  <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+
+        <div class="container">
+          <div class="carousel-caption text-start">
+            <h1>Example headline.</h1>
+            <p>Some representative placeholder content for the first slide of the carousel.</p>
+            <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>Another example headline.</h1>
+            <p>Some representative placeholder content for the second slide of the carousel.</p>
+            <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+
+        <div class="container">
+          <div class="carousel-caption text-end">
+            <h1>One more for good measure.</h1>
+            <p>Some representative placeholder content for the third slide of this carousel.</p>
+            <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+
+<div class="container">
+    <!--Slideshow starts here -->
+    {% for product, range, nSlides in allProds %}
+    <h2>{{product.0.category}}</h2>
+  <div class="row">
+<div id="demo{{forloop.counter}}" class="col carousel slide my-3" data-ride="carousel">
+    <ul class="carousel-indicators">
+      <li data-target="#demo{{forloop.counter}}" data-slide-to="0" class="active"></li>
+        {% for i in range %}
+       <li data-target="#demo{{forloop.parentloop.counter}}" data-slide-to="{{i}}" ></li>
+        {% endfor %}
+    </ul>
+
+
+    <div class="container carousel-inner no-padding">
+
+      <div class="carousel-item active">
+
+
+          {% for i in product %}
+        <div class="col-xs-3 col-sm-3 col-md-3">
+          <div class="card" style="width: 18rem;">
+            <img src='/media/{{i.image}}' class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">{{i.product_name}}</h5>
+              <p class="card-text">{{i.desc}}</p>
+              <button id="pr{{i.id}}" class="btn btn-primary cart">Add to Cart</button>
+                <a href="/ShopInn/productView/{{i.id}}"><button id="qv{{i.id}}" class="btn btn-primary cart">QuickView</button></a>
+            </div>
+          </div>
+        </div>
+          {% if forloop.counter|divisibleby:4 and forloop.counter > 0 and not forloop.last %}
+             </div><div class="carousel-item">
+            {% endif%}
+
+            {% endfor %}
+      </div>
+         </div>
+        </div>
+
+    <!-- left and right controls for the slide -->
+    <a class="carousel-control-prev" href="#demo{{forloop.counter}}" data-slide="prev">
+        <span class="carousel-control-prev-icon" ></span>
+    </a>
+    <a  class="carousel-control-next" href="#demo{{forloop.counter}}" data-slide="next">
+        <span class="carousel-control-next-icon" ></span>
+    </a>
+      </div>
+    {%endfor%}
+    </div>
+    {% endblock %}
+
+<script>
+console.log('working')
+if(localStorage.getItem('cart') == null)
+{
+var cart={};
+}
+else{
+cart= JSON.parse(localStorage.getItem('cart'));
+document.getElementById('cart').innerHTML = Object.keys(cart).length;
+}
+
+//jQuery starts here//
+$('.cart').click(function(){
+
+console.log('clicked');
+var idStr= this.id.toString();
+console.log(idStr);
+if(cart[idStr]!= undefined) {
+cart[idStr] = cart[idStr]+1;
+}
+else{
+cart[idStr] = 1;
+}
+console.log(cart);
+localStorage.setItem('cart', JSON.stringify(cart));
+document.getElementById('cart').innerHTML = Object.keys(cart).length;
+});
+
+$('#popcart').popover();
+document.getElementById("popcart").setAttribute('data-content', '<h5>Add your Items here in the cart</h5>');
+</script>
+
+
+
+<script>
+console.log('working')
+if(localStorage.getItem('cart') == null)
+{
+var cart={};
+}
+else{
+cart= JSON.parse(localStorage.getItem('cart'));
+document.getElementById('cart').innerHTML = Object.keys(cart).length;
+updateCart(cart);
+}
+
+//jQuery starts here//
+$('.cart').click(function(){
+
+var idStr= this.id.toString();
+
+if(cart[idStr]!= undefined) {
+cart[idStr] = cart[idStr]+1;
+}
+else{
+cart[idStr] = 1;
+}
+console.log(cart)
+ updateCart(cart)
+
+ localStorage.setItem('cart', JSON.stringify(cart));
+    document.getElementById('cart').innerHTML = Object.keys(cart).length;
+
+
+});
+
+$('#popcart').popover();
+document.getElementById("popcart").setAttribute('data-content', '<h5>Add your Items here in the cart</h5>');
+
+function updateCart(cart) {
+    for (var item in cart) {
+        document.getElementById('div' + item).innerHTML = "<button id='minus" + item + "' class='btn btn-primary minus'>-</button> <span> id='val" + item + "''>" + cart[item] + "</span> <button id='plus" + item + "' class='btn btn-primary plus'> + </button>";
+    }
+
+}
+</script>

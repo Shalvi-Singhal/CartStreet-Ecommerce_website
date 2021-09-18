@@ -1,0 +1,248 @@
+{% extends 'ShopInn/basic.html' %}
+{% block css %}
+
+
+           img.image{
+            width: 90px;
+            height: 90px;
+           }
+          h2{
+           margin-top: 50px;
+           }
+          #arrowleft {
+         padding: 10px 8px;
+         position: absolute;
+         margin-left: -60px;
+         top: 45%;
+         z-index: 5;
+         display: inline-block;
+          }
+           #arrowright {
+           padding: 10px 8px;
+           position: absolute;
+           margin-right: -60px;
+           top: 45%;
+           z-index: 5;
+           display: inline-block;
+          }
+          #big_slider.carousel-inner div {
+           height: 450px;
+           object-fit: cover;
+          }
+          #abc
+         {margin:30px;
+          }
+          .col-md-3
+          {
+          display: inline-block;
+          margin-left:-4px;
+          }
+          .carousel-indicators .active {
+          background-color: blue;
+            }
+          .col-md-3 img{
+           max-width: 190px;
+           height: 140px;
+          }
+          body .carousel-indicator li{
+          background-color: blue;
+          }
+          body .carousel-indicators{
+          bottom: 0;
+          }
+          body .carousel-control-prev-icon,
+          body .carousel-control-next-icon{
+            background-color: #6c757d;
+
+          }
+           .carousel-control-prev,
+           .carousel-control-next{
+           top: auto;
+           bottom: auto;
+           padding-top: 150px;
+
+          }
+           body .no-padding{
+           padding-left: 0,
+           padding-right: 0;
+           }
+  {%endblock%}
+
+  {%block body%}
+  {% load static %}
+
+ <div class="container px-4">
+  <div class="row gx-5" >
+    <div class="col" >
+      <div>
+        <img src="https://rukminim1.flixcart.com/flap/128/128/image/f15c02bfeb02d15d.png?q=100" alt="top offers" class="image" ></div>
+    <div class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Top Offers
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div><img src="https://rukminim1.flixcart.com/flap/128/128/image/ab7e2b022a4587dd.jpg?q=100" alt="home decor" class="image"></div>
+    <div class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Home Decor
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div><img src="https://rukminim1.flixcart.com/flap/128/128/image/29327f40e9c4d26b.png?q=100" alt="grocery" class="image"></div>
+       <div class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#"  role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Grocery
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div><img src="https://rukminim1.flixcart.com/flap/128/128/image/69c6589653afdb9a.png?q=100" alt="electronics" class="image"></div>
+       <div class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#"  role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Electronics
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div><img src="https://rukminim1.flixcart.com/flap/128/128/image/82b3ca5fb2301045.png?q=100" alt="fashion" class="image"></div>
+       <div class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#"  role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Fashion
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div><img src="https://rukminim1.flixcart.com/flap/128/128/image/22fddf3c7da4c4f4.png?q=100"
+                alt="mobile" class="image"></div>
+       <div class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#"  role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Mobiles
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+ <div id="carouselExampleControls" class="carousel slide" data-ride="carousel"  >
+  <div  id="big_slider" class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://i.pinimg.com/originals/b7/90/26/b79026725e150626c8c6de471c1ce5cd.jpg" class="d-block w-100"  alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://i.ytimg.com/vi/c-YmOwCWkLU/maxresdefault.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://i.pinimg.com/originals/ff/26/b0/ff26b0899be151d6c5ae11fa34c69e85.png" class="d-block w-100" alt="...">
+    </div>
+  </div>
+
+      <a class="carousel-control-prev " id="arrowleft" href="#carouselExampleControls" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" ></span>
+      </a>
+      <a class="carousel-control-next" id="arrowright" href="#carouselExampleControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" ></span>
+      </a>
+
+</div>
+
+<div class="container">
+    <!--Slideshow starts here -->
+    {% for product, range, nSlides in allProds %}
+    <h2>{{product.0.category}}</h2>
+  <div class="row">
+<div id="demo{{forloop.counter}}" class="col carousel slide my-3" data-ride="carousel">
+    <ul class="carousel-indicators">
+      <li data-target="#demo{{forloop.counter}}" data-slide-to="0" class="active"></li>
+        {% for i in range %}
+       <li data-target="#demo{{forloop.parentloop.counter}}" data-slide-to="{{i}}" ></li>
+        {% endfor %}
+    </ul>
+
+
+    <div class="container carousel-inner no-padding">
+
+      <div class="carousel-item active">
+
+
+          {% for i in product %}
+        <div class="col-xs-3 col-sm-3 col-md-3">
+          <div class="card align-items-center" style="width: 18rem;">
+            <img src='/media/{{i.image}}' class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title" id="namepr{{i.id}}" >{{i.product_name}}</h5>
+              <p class="card-text">{{i.desc}}</p>
+                <span id="divpr{{i.id}}" class="divpr">
+              <button id="pr{{i.id}}" class="btn btn-primary cart "> Add To Cart</button>
+               </span>
+                <a href="/ShopInn/productView/{{i.id}}"><button id="qv{{i.id}}" class="btn btn-primary ">QuickView</button></a>
+            </div>
+          </div>
+        </div>
+          {% if forloop.counter|divisibleby:4 and forloop.counter > 0 and not forloop.last %}
+             </div><div class="carousel-item">
+            {% endif%}
+
+            {% endfor %}
+      </div>
+         </div>
+        </div>
+
+    <!-- left and right controls for the slide -->
+    <a class="carousel-control-prev" href="#demo{{forloop.counter}}" data-slide="prev">
+        <span class="carousel-control-prev-icon" ></span>
+    </a>
+    <a  class="carousel-control-next" href="#demo{{forloop.counter}}" data-slide="next">
+        <span class="carousel-control-next-icon" ></span>
+    </a>
+      </div>
+    {%endfor%}
+    </div>
+   
+{% endblock %}
+
+
+
+
+
